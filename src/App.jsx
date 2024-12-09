@@ -1,20 +1,16 @@
 import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import FeedbackForm from "./components/FeedbackForm";
-import Hero from './components/hero';
-import './App.css';
-import Pr from './components/Pr';
-import Insights from './components/insights';
-import Footer from './components/Footer';
-import Test from './components/Test';
-import Stats from './components/Stats';
+import Hero from "./components/hero";
+import "./App.css";
+import Stats from "./components/Stats";
 
 const App = () => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false); // State to toggle the feedback form visibility
 
   // Toggle the visibility of FeedbackForm
   const handleShowFeedbackForm = () => {
-    setShowFeedbackForm(!showFeedbackForm); 
+    setShowFeedbackForm(true); // Show FeedbackForm and hide others
   };
 
   return (
@@ -36,16 +32,15 @@ const App = () => {
         {/* Pass handleShowFeedbackForm function to Navbar as a prop */}
         <Navbar onShowFeedbackForm={handleShowFeedbackForm} />
 
-        {/* Conditionally render the FeedbackForm based on showFeedbackForm state */}
-        {showFeedbackForm && <FeedbackForm />}
-
-        {/* Other components */}
-        <Hero />
-        <Insights />
-        <Footer />
-        <Pr />
-        <Stats />
-        <Test />
+        {/* Conditionally render FeedbackForm or other components */}
+        {showFeedbackForm ? (
+          <FeedbackForm />
+        ) : (
+          <>
+            <Hero />
+            <Stats />
+          </>
+        )}
       </div>
     </div>
   );
