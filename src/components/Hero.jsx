@@ -3,7 +3,7 @@ import heroimg from "../assets/11.webp";
 
 const Hero = () => {
     return (
-        <div className="py-40 ">
+        <div className="py-20 ">
             <div className="container mx-auto px-6 md:px-12">
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 lg:w-2/3">
@@ -11,9 +11,9 @@ const Hero = () => {
                             Welcome to our <br className="hidden md:block" />
                             <span className="text-indigo-600">Awesome</span> Website
                         </h1>
-                        <button>Dark mode</button>
+                        
                         <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-8">
-                            We create beautiful and functional websites for businesses of all sizes.
+                            We create beautiful and functional websites for Latest Technology
                         </p>
                         <div className="flex gap-4">
                             <a

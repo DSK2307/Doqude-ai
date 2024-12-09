@@ -4,7 +4,7 @@ const Stats = () => {
     return (
         <div>
             <section className="text-gray-700 body-font">
-                <div className="flex justify-center mt-10 text-4xl font-semibold">
+                <div className="flex justify-center mt-20 text-4xl font-semibold">
                     About Us
                 </div>
                 <div className="container px-5 py-12 mx-auto">
