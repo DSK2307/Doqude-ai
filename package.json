@@ -1,6 +1,6 @@
 {
-  "name": "doqude--ai",
-  "homepage": "https://DSK2307.github.io/doqude--ai",
+  "name": "Doqude-ai",
+  "homepage": "https://DSK2307.github.io/Doqude-ai",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -16,6 +16,7 @@
     "@react-three/drei": "^9.120.2",
     "@react-three/fiber": "^8.17.10",
     "doqude--ai": "file:",
+    "Doqude-ai": "file:",
     "framer-motion": "^11.13.1",
     "icons": "^1.0.0",
     "maath": "^0.10.8",
