@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import FeedbackForm from "./components/FeedbackForm";
 import Hero from "./components/hero";
 import "./App.css";
-import Stats from "./components/Stats";
+import Stats from "./components/About";
 
 const App = () => {
   const [showFeedbackForm, setShowFeedbackForm] = useState(false); // State to toggle the feedback form visibility
